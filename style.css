@@ -1,0 +1,195 @@
+/*
+Theme Name: Mayara Theme
+Theme URI: http://mayaraviana.com
+Author: Mayara Viana
+Author URI: http://mayaraviana.com
+Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Version: 1.0
+*/
+
+@font-face {
+  font-family: Helvetica;
+  src: url(../fonts/HelveticaNeueLTPro-Roman.otf);
+}
+@font-face {
+  font-family: Helvetica;
+  src: url(../fonts/HelveticaNeueLTPro-Bd.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: Atkinson;
+  src: url(../fonts/AtkinsonHyperlegible-Regular.ttf);
+}
+@font-face {
+  font-family: Atkinson;
+  src: url(../fonts/AtkinsonHyperlegible-Bold.ttf);
+  font-weight: bold;
+}
+/*--------------------------------------------------------------
+# general
+--------------------------------------------------------------*/
+
+body {
+  background-color: #fff;
+}
+*,
+input,
+a {
+  font-family: 'Helvetica', sans-serif;
+  color: #000;
+}
+.p-text {
+  font-family: 'Atkinson', sans-serif;
+  color: #3f3f3f;
+}
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #0029ff;
+}
+a:visited {
+  color: #000;
+}
+
+.blue {
+  color: #0029ff !important;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+h4 {
+  font-size: 1rem;
+}
+.webnotes-link {
+  text-decoration: underline !important;
+}
+/*--------------------------------------------------------------
+# hero
+--------------------------------------------------------------*/
+.hero {
+  padding: 6rem 0 1rem 0;
+}
+
+.hero-heading {
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 69px;
+}
+
+.works a {
+  text-decoration: none;
+}
+.item {
+  border: none;
+}
+.item .item-wrap {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.item .item-wrap:after {
+  z-index: 2;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s all ease-in-out;
+}
+.item .item-wrap img {
+  transition: 0.3s transform ease;
+  transform: scale(1);
+}
+
+.item .item-wrap:hover {
+  text-decoration: none;
+}
+.item .item-wrap:hover img {
+  transform: scale(1.05);
+}
+.item .item-wrap:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  color: #000;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  padding: 0 0 2rem 0;
+}
+
+/*custom footer*/
+.typer .cursor {
+  color: #000;
+}
+.typer-line {
+  font-size: 2.5rem;
+  font-weight: 700 !important;
+  padding: 3% 0;
+}
+.typer-title {
+  font-size: 4rem;
+}
+
+.credits {
+  font-size: 0.9rem;
+  color: #000;
+}
+nav {
+  padding: 2% 2% 1.5% 0;
+}
+nav a {
+  font-size: 1.1rem;
+  text-decoration: none !important;
+}
+.nav-fixed {
+  width: 100%;
+  position: fixed;
+  transition: 0.3s ease-in-out;
+  background-color: #fff;
+  color: #000;
+}
+
+.nav-active {
+  background-color: #000;
+  color: #fff;
+  padding: 1% 2% 1% 0;
+}
+.nav-fixed.nav-active a {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.btn-custom {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 3rem;
+}
+
+.footer-photos {
+  margin-left: -140px;
+}
+
+.menu {
+  display: flex;
+}
+ul {
+  list-style: none;
+  margin-bottom: 0rem;
+}
+li {
+  padding-left: 1.5rem;
+}

@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Atkinson;
+    src: url(../fonts/AtkinsonHyperlegible-Regular.ttf);
+  }
+  @font-face {
+    font-family: Atkinson;
+    src: url(../fonts/AtkinsonHyperlegible-Bold.ttf);
+    font-weight: bold;
+  }
+  
+h2, h4, p {
+  font-family: 'Atkinson', sans-serif;
+}
+p{
+    color: #3F3F3F;
+}
+
+.btn-custom{
+  background-color: #000;
+  border: none;
+  color: #fff;
+  padding: 0.5rem;
+}
